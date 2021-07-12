@@ -1,0 +1,274 @@
+jQuery.noConflict()(function($){
+	"use strict";
+	$(document).ready(function() {
+
+		$('p:empty').remove();
+
+		$('.sf-menu').css({'display':'block'});
+
+		$("a").has("img").css({
+			"border": "0 none"
+		});
+
+	});
+});
+
+/*-------------------------------------------------*/
+/*	Pretty Photo
+/*-------------------------------------------------
+jQuery.noConflict()(function($){
+	"use strict";
+	$(document).ready(function() {
+
+		$('a[data-rel]').each(function() {
+			$(this).attr('rel', $(this).data('rel'));
+		});
+
+		$("a[rel^='prettyPhoto']").prettyPhoto({
+			animationSpeed: 'normal', /* fast/slow/normal 
+			opacity: 0.80, /* Value between 0 and 1 
+			showTitle: true, /* true/false 
+			theme:'light_square',
+			deeplinking: false
+		});
+		
+	});
+});
+
+		
+/***************************************************
+			SuperFish Menu
+***************************************************/	
+jQuery.noConflict()(function(){
+		"use strict";
+		jQuery('ul.sf-menu').superfish({
+			delay:400,
+			autoArrows:true,
+			dropShadows:false,
+			animation:{opacity:'show'},
+			animationOut:  {opacity:'hide'}
+		});
+});
+
+
+//jQuery('meta[name=viewport]').attr('content','width='+$(window).width()+',user-scalable=no');
+
+/*-------------------------------------------------*/
+/*	CUSTOM BACKGROUND
+/*-------------------------------------------------*/
+jQuery(window).load(function() {    
+	"use strict";
+	var theWindow		= jQuery(window),
+		$bg				= jQuery("#bg-stretch"),
+		aspectRatio		= $bg.width() / $bg.height();
+
+	function resizeBg() {
+			
+		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+			$bg
+				.removeClass()
+				.addClass('bg-height');
+		} else {
+			$bg
+				.removeClass()
+				.addClass('bg-width');
+		}
+
+			var pW = (theWindow.width() - $bg.width())/2;
+						$bg.css("left", pW);
+			var pH = (theWindow.height() - $bg.height())/2;
+						$bg.css("top", pH);
+
+	}
+
+	theWindow	.resize(function() {
+		resizeBg();
+	}).trigger("resize");
+
+});
+
+jQuery(".d_count").prepend("<img src=\"https://graphicburger.com/wp-content/themes/wp-pravda/img/img_new_14.png\" />");
+
+/*jQuery.noConflict()(function($){
+	"use strict";
+	$(window).load(function(){
+		var $window = $(window);
+		window.prettyPrint() && prettyPrint();
+	});
+});*/
+
+jQuery(function($){
+	var showTopMenu = function() {
+		var topMenu = $('#hover-nav'); 
+
+		if ($(window).scrollTop() > 270) {
+			topMenu.css('display', 'block');
+		} else {
+			topMenu.css('display', 'none');
+		}
+	}
+	$(window).scroll(function(){ showTopMenu(); })
+
+})
+
+var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+if (is_chrome || is_safari) {
+	jQuery('.search-field').focus(function(){
+		//alert('test');
+		jQuery('.menu-item-search form').width(204);
+	});
+	
+	jQuery('.search-field').blur(function(){
+		//alert('test');
+		jQuery('.menu-item-search form').width(30);
+	});
+}
+jQuery('.search-submit').focus(function() {
+	alert('test');
+	//jQuery('.menu-item-search form').width(185);
+});
+
+
+// hover code for index  templates
+jQuery(document).ready(function() {
+	jQuery('#post-area .image').hover(
+		function() {
+			$(this).stop().fadeTo(300, 0.8);
+		},
+		function() {
+			$(this).fadeTo(300, 1.0);
+		}
+	);	
+});
+
+
+// clear text area
+jQuery('textarea.comment-input').focus(function() {
+   jQuery(this).val('');
+});
+
+var scriptEls = document.getElementsByTagName( 'script' );
+var thisScriptEl = scriptEls[scriptEls.length - 1];
+var scriptPath = thisScriptEl.src;
+var scriptFolder = scriptPath.substr(0, scriptPath.lastIndexOf( '/' )+1 );
+
+jQuery('.your-name input').attr('placeholder', 'Your name');
+jQuery('.your-email input').attr('placeholder', 'Your email address');
+jQuery('input#mc4wp_email').attr('placeholder', 'Your email address');
+jQuery('.your-message textarea').attr('placeholder', 'Drop me a line or two');
+
+/*jQuery('input#mc4wp_email').click(function() {
+	if (jQuery(this).attr('value') == 'Your email address' ) {
+		jQuery(this).attr('value', '');
+	}
+});
+jQuery('input#mc4wp_email').blur(function() {
+	if (jQuery(this).attr('value') == '' ) {
+		jQuery(this).attr('value', 'Your email address');
+		jQuery(this).removeClass('completed');
+	} else {
+		jQuery(this).addClass('completed')
+	}
+});
+jQuery('.your-name input').click(function() {
+	if (jQuery(this).attr('value') == 'Your name' ) {
+		jQuery(this).attr('value', '');
+	} 
+});
+jQuery('.your-name input').blur(function() {
+	if (jQuery(this).attr('value') == '' ) {
+		jQuery(this).attr('value', 'Your name');
+		jQuery(this).removeClass('completed');
+	} else {
+		jQuery(this).addClass('completed')
+	}
+});
+
+jQuery('.your-email input').click(function() {
+	if (jQuery(this).attr('value') == 'Your email address' ) {
+		jQuery(this).attr('value', '');
+	} 
+});
+jQuery('.your-email input').blur(function() {
+	if (jQuery(this).attr('value') == '' ) {
+		jQuery(this).attr('value', 'Your email address');
+		jQuery(this).removeClass('completed');
+	} else {
+		jQuery(this).addClass('completed')
+	}
+});
+
+jQuery('.your-message textarea').click(function() {
+	if (jQuery(this).attr('value') == 'Drop me a line or two' ) {
+		jQuery(this).attr('value', '');
+	} 
+});
+jQuery('.your-message textarea').blur(function() {
+	if (jQuery(this).attr('value') == '' ) {
+		jQuery(this).attr('value', 'Drop me a line or two');
+		jQuery(this).removeClass('completed');
+	} else {
+		jQuery(this).addClass('completed')
+	}
+});*/
+
+function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+ }
+ 
+pathArray = window.location.href.split( '/' );
+protocol = pathArray[0];
+host = pathArray[2]+'/'+pathArray[3];
+url = protocol + '//' + host;
+
+ //console.log(jQuery('.d_cound').text());
+ jQuery('.d_cound').html(commaSeparateNumber(jQuery('.d_cound').text()));
+/*
+ * jQuery hashchange event - v1.3 - 7/21/2010
+ * http://benalman.com/projects/jquery-hashchange-plugin/
+ * 
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+(function($,e,b){var c="hashchange",h=document,f,g=$.event.special,i=h.documentMode,d="on"+c in e&&(i===b||i>7);function a(j){j=j||location.href;return"#"+j.replace(/^[^#]*#?(.*)$/,"$1")}$.fn[c]=function(j){return j?this.bind(c,j):this.trigger(c)};$.fn[c].delay=50;g[c]=$.extend(g[c],{setup:function(){if(d){return false}$(f.start)},teardown:function(){if(d){return false}$(f.stop)}});f=(function(){var j={},p,m=a(),k=function(q){return q},l=k,o=k;j.start=function(){p||n()};j.stop=function(){p&&clearTimeout(p);p=b};function n(){var r=a(),q=o(m);if(r!==m){l(m=r,q);$(e).trigger(c)}else{if(q!==m){location.href=location.href.replace(/#.*/,"")+q}}p=setTimeout(n,$.fn[c].delay)}$.browser.msie&&!d&&(function(){var q,r;j.start=function(){if(!q){r=$.fn[c].src;r=r&&r+a();q=$('<iframe tabindex="-1" title="empty"/>').hide().one("load",function(){r||l(a());n()}).attr("src",r||"javascript:0").insertAfter("body")[0].contentWindow;h.onpropertychange=function(){try{if(event.propertyName==="title"){q.document.title=h.title}}catch(s){}}}};j.stop=k;o=function(){return a(q.location.href)};l=function(v,s){var u=q.document,t=$.fn[c].domain;if(v!==s){u.title=h.title;u.open();t&&u.write('<script>document.domain="'+t+'"<\/script>');u.close();q.location.hash=v}}})();return j})()})(jQuery,this);
+
+jQuery('a.premium').hover(
+	function() {
+		jQuery('.close').css({'opacity':1});
+	},
+	function() {
+		jQuery('.close').css({'opacity':0});
+	});
+jQuery('div.premium').hover(
+	function() {
+		jQuery('.close').css({'opacity':1});
+	},
+	function() {
+		jQuery('.close').css({'opacity':0});
+	});
+
+jQuery('.premium .close').click(function() {
+	jQuery('.premium').hide();
+	jQuery.ajax({
+		url: "https://graphicburger.com/wp-content/themes/wp-pravda/remember.php",
+		context: document.body
+	}).done(function() {
+	});	
+});
+
+jQuery('#chimpy_lock_field_EMAIL').attr('placeholder', 'Your Email address');
+
+jQuery('#chimpy_lock_submit').click(function() {
+	jQuery(this).css({'display':'none'});
+});
+
+if (jQuery('.tcsublocker-sub-box').length) {
+	jQuery('.you-may-like-title').css({'border':'none'});
+}
+
+//jQuery('.tcsublocker-submit').attr('value', 'Unlock Now')

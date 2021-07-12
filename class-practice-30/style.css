@@ -1,0 +1,29 @@
+.portfolio .mix{
+	display: none;
+	width:30%;
+	height:300px;
+	background:green;
+	color:white;
+	border-radius: 4px;
+	float: left;
+	overflow:hidden;
+	margin:3px;
+}
+	
+}
+.portfolio-nav ul{
+	text-align:center;
+}
+.portfolio-nav ul li{
+	display:inline;
+}
+.portfolio-nav ul li a{
+	display:inline-block;
+	padding:10px 20px;
+	border-radius:4px;
+	text-decoration: none;
+	background:#2980b9;
+	color:white;
+	font-family: tahoma;
+	text-transform:capitalize;
+} 

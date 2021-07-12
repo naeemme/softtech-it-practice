@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap (part 2)</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		 
+			$('[data-toggle="popover"]').popover()
+	
+		})
+	</script>
+	
+</head>
+<body>
+
+	<div class="well well-sm ">this is a well</div>
+	<div class="video">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hUrMTK-O_Yo" frameborder="0" ></iframe>
+		</div>
+	</div>
+	<div class="panel panel-default">
+  
+	<div class="panel-heading">Panel heading</div>
+	<div class="panel-body">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+		Why do we use it?
+		It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>.
+
+
+	</div>
+
+ 
+	  <ul class="list-group">
+		<li class="list-group-item">Cras justo odio</li>
+		<li class="list-group-item">Dapibus ac facilisis in</li>
+		<li class="list-group-item">Morbi leo risus</li>
+		<li class="list-group-item">Porta ac consectetur ac</li>
+		<li class="list-group-item">Vestibulum at eros</li>
+	  </ul>
+	</div>
+	
+	<div class="list-group">
+	  <a href="#" class="list-group-item active">
+		<h4 class="list-group-item-heading">List group item heading</h4>
+		
+		<p class="list-group-item-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum g</p>
+		</a>
+		<a href="https://www.google.com/search?q=web+design&rlz=1C1CHBF_enBD895BD895&oq=web+de&aqs=chrome.1.69i57j0l6j69i60.5078j0j7&sourceid=chrome&ie=UTF-" class="list-group-item ">
+		<h4 class="list-group-item-heading">web design</h4>
+		
+		<p class="list-group-item-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum g</p>
+	  
+	  </a>
+	  
+	  <a href="#" class="list-group-item ">
+		<h4 class="list-group-item-heading">web application</h4>
+		
+		<p class="list-group-item-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum g</p>
+	  </a>
+	 
+	</div>
+	
+	<br />
+	<br />
+	<br />
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" style="width:50%">50%</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-info" style="width:80%">80%</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-info progress-bar-striped" style="width:80%">80%</div>
+	</div>
+	
+	
+	<a href="#" class="btn btn-success"data-toggle="modal" data-target="#ami" data-backdrop="static">click here</a>
+	<div class="modal fade" id="ami">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3>fill up the form:</h3>
+				
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<label for="first">First name</label>
+						<input type="text" class="form-control" />
+						<br />
+						<input type="submit" value="submit" class="btn btn-primary" />
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#"class="btn btn-info">close</a>
+					<a href="#"class="btn btn-danger">reset</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#home" data-toggle="tab" >Home</a></li>
+		<li><a href="#about" data-toggle="tab">about us</a></li>
+		<li><a href="#portfolio" data-toggle="tab">portfolio</a></li>
+		<li><a href="#contact" data-toggle="tab">contact</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="home">home content</div>
+		<div class="tab-pane" id="about">about us content</div>
+		<div class="tab-pane" id="portfolio">portfolio content</div>
+		<div class="tab-pane" id="contact">contact us content</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	
+	<a href="#" data-html="true" class="btn btn-info" data-toggle="popover" data-trigger="focus" data-delay="3000" data-placement="right" title="something" data-content="Add small overlays of content, like those on the iPad, to any element for housing secondary information.
+
+	Popovers whose both title and content are zero-length are never displayed.">click here</a>
+	
+	<a data-parent="true" data-toggle="collapse" href="#abcd">learn more</a>
+	<div id="abcd" class="collapse something">
+		<p>nothing</p>
+	</div>
+	<br />
+	<br />
+	<a data-parent="true" data-toggle="collapse" href="#naeem">learn more</a>
+	<div id="naeem" class="collapse something">
+		<p>nothing</p>
+	</div>
+	
+	<div id="our-slider" class="slide carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="images/fullimage1.jpg" alt="" />
+			</div>
+			<div class="item">
+				<img src="images/fullimage2.jpg" alt="" />
+			</div>
+			<div class="item">
+				<img src="images/fullimage3.jpg" alt="" />
+			</div>
+		</div>
+			<a class="left carousel-control" data-slider="prev" href="#our-slider"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" data-slider="next" href="#our-slider"><span class="glyphicon glyphicon-chevron-right"></span></a>	
+		
+	
+		
+		
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+	margin:0;
+}
+.something{
+	width:50%;
+	margin:auto;
+	background-color:blue;
+	
+}
+
+
+.something.ui-state-active .ui-icon {
+    background-image: url("css/images/ui-icons_228ef1_256x240.png");
+}
+.input{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.ui-widget{
+	margin-top:70px;
+	margin-left: 200px;
+}
+.onekgula{
+	margin-left: 180px;
+}
+.popupbox{
+	display:none;
+}
+.mainmenu{
+	width:50%;
+}

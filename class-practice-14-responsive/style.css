@@ -1,0 +1,31 @@
+body{
+	margin:0;
+}
+.main-menu{
+	background:#2980b9;
+}
+.main-menu:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.main-menu ul{
+	list-style:none;
+	margin:0;
+}
+.main-menu ul li{
+	float:left;
+}
+.main-menu ul li a{
+	color:#FFFFFF;
+	text-decoration:none;
+	padding:10px 20px;
+	display:block;
+}
+.main-menu ul li:hover a{
+	background:#2c3e50;
+}
+.main-menu ul .current a{
+	background:#2c3e50;
+}
+

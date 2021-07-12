@@ -1,0 +1,236 @@
+/*** typography ***/
+@font-face{
+	font-family:"gothamRoundedBold";
+	src: url('fonts/something.woff') format('woff');
+}
+@font-face{
+	font-family:"gothamRoundedBook";
+	src: url('fonts/gothamRoundedBook.woff') format('woff');
+}
+body, p{
+    font-family:"gothamRoundedBook";
+	font-size:12px;
+	line-height:1.3em;
+}
+h3{
+	color:#16A086;
+	font-family:"gothamRoundedBold";
+	font-size:14px;
+	text-transform:uppercase;
+	line-height:1.3em;
+	letter-spacing:1px;
+	
+}
+h2{
+	font-size:26px;
+	text-transform:uppercase;
+	letter-spacing:6px;
+	font-weight:nomal;
+
+	
+}
+ h5{
+	font-size:13px;
+	font-weight:nomal;
+	font-family:"gothamRoundedBook";
+	letter-spacing:2px;
+}
+p{
+	color:#AEAFB1;
+	letter-spacing:1px;
+	font-size:10px;
+	line-height:2em;
+	
+}
+strong{
+	color:#666666;
+}
+
+/***** header area ****/
+
+
+.container{
+	width:80%;
+	margin: 0 auto;
+	max-width:960px;
+}
+.header-area{
+	background:url('images/header-bg.jpg') no-repeat 0 0 / 100% 100%;
+	color:#FFFFFF;
+	text-align:center;
+	overflow:hodden;
+	padding:25px 0;
+	
+}
+/***** menu arra ****/
+.menu-area ul{
+	text-align:center;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu-area ul li{
+	display:inline;
+	margin:0 24px;
+}
+.menu-area ul li a{
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:uppercase;
+	border-bottom: 1px solid transparent;
+	font-size:12px;
+	display:inline-block;
+	padding:10px 0;
+	transition: .5s;
+}
+.menu-area ul.logo img{
+	margin:0 40px;
+	width:40px;
+	height:auto;
+}
+.menu-area ul.logo a:hover{
+	border:none;
+}
+.menu-area ul.logo a{
+	border:none;
+}
+.menu-area ul li a:hover{
+	color:#16A086;
+	border-bottom: 1px solid #FFFFFF;
+}
+/*** welcome text ****/
+.welcome-text{
+	margin-top:180px;
+	overflow:hidden;
+	
+}
+ 
+.btn{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background:#16A086;
+	padding:10px 25px;
+	border-radius:2px;
+	display:inline-block;
+	transition:4s;
+	border: 1px solid transparent;
+	
+}
+.btn:hover{
+	background: #FFFFFF;
+	color: #16A086;
+	border: 1px solid #16A086;
+	
+}
+/*** social icons ***/
+.social-media{
+	overflow: hidden;
+	margin-top: 130px;
+}
+.social-media ul{
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.social-media ul li{
+	display: inline;
+	margin: 0 10px;
+}
+.social-media ul li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 20px;
+	
+	
+}
+/*** getting started ****/
+.getting-started{
+	overflow: hidden;
+	background-color: #F5F6F8;
+	
+	
+}
+.getting-started .text-area{
+	margin-top:40px;
+	padding-bottom:30px;
+	background-image: url('images/hand.png');
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-position: top right;	
+}
+.getting-started .start-text{
+	width: 50%;	
+}
+.col-1-2{
+	width:50%;
+	float:left;
+	overflow:hidden;
+}
+
+
+.text-area p{
+	margin-bottom: 30px;
+}
+
+
+
+/*** design area ****/
+
+.design-area{
+	overflow: hidden;
+	margin-top:70px;
+}
+.design{
+	background-image: url('images/mobile.png');
+	background-repeat: no-repeat;
+	
+	overflow: hidden;
+	background-size: 30%;
+	background-position: top left;
+}
+.design-text{
+	width: 40%;
+	float: right;
+	overflow:hidden;	
+}
+.slide{
+	margin: 50px 0;
+	
+}
+.arrow i{
+	color:green;
+	font-size:20px;
+	margin-right:10px;
+}
+.subscribe-area{
+	background: url('images/subscribe-bg.jpg') no-repeat 0 0 / 100% 100%;
+	padding:200px;
+}
+.subscribe-area form{
+	width: 240px;
+	margin:0 auto;
+}
+.subscribe-area form input[type="email"] {
+	background:#FFFFFF;
+	padding:10px 20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	border:none;
+	border-radius: 3px 0 0 3px;
+	margin-right:0;
+	
+}
+.subscribe-area form button[type="submit"] {
+	background:green;
+	color:#FFFFFF;
+	padding:10px 20px;
+	text-transform:uppercase;
+	font-weight:bold;
+	border:none;
+	border-radius:0  3px 3px 0;
+	margin-left:-3px;
+	
+}
+

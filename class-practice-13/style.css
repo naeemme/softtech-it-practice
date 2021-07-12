@@ -1,0 +1,23 @@
+*{
+	color:red;
+}
+.box{
+	height:300px;
+	width:300px;
+	background:green;
+}
+.round{
+	border-radius:50%;
+}
+.red{
+	background:yellow;
+}
+.blue{
+	background:blue;
+}
+.heading{
+	float:right;
+	text-transform:capitalize;
+	
+
+}

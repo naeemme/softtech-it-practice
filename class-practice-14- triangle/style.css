@@ -1,0 +1,22 @@
+body{
+	margin:0;
+}
+.box{
+	height:0;
+	width:0;
+	border-bottom:100px solid blue;
+	border-left:50px solid transparent;
+	border-right:50px solid transparent;
+	margin-bottom:30px;
+	margin-left:20px;
+}
+.rock{
+	height:0;
+	width:0;
+	border-top:50px solid transparent;
+	border-right:30px solid transparent;
+	border-left:50px solid red;
+	margin-left:20px;
+	
+	
+}

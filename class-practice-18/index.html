@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap (part 2)</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<a href="#" class="btn btn-primary">
+		<span class="glyphicon glyphicon-euro">Read more</span>
+	</a>
+	
+	<div class="box">
+	
+		<div class="dropup something">
+			<a class="btn btn-info" href="#"  data-toggle="dropdown">something <span class="glyphicon glyphicon-lock"></span></a>
+			<ul class="dropdown-menu">
+			<li><a href="#">dropdown menu</a></li>
+			<li><a href="#">dropdown menu</a></li>
+			<li><a href="#">dropdown menu</a></li>
+			<li><a href="#">dropdown menu</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="navigation">
+		<div class="btn-toolbar"  role="toolbar" aria-label="Toolbar">
+			<div class="btn-group" aria-label="first page numbers">
+				<a class="btn btn-default" href="#">1</a>
+				<a class="btn btn-default" href="#">2</a>
+				<a class="btn btn-default" href="#">3</a>
+				<a class="btn btn-default" href="#">4</a>
+				<a class="btn btn-default" href="#">5</a>
+			</div>
+			<div class="btn-group" aria-label="button">
+				<a class="btn btn-default" href="#">6</a>
+				<a class="btn btn-default" href="#">7</a>
+				<a class="btn btn-default" href="#">8</a>
+				<a class="btn btn-default" href="#">9</a>
+				<a class="btn btn-default" href="#">10</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="btn-group-vertical ">
+		<a href="" class="btn btn-primary">button</a>
+		<a href="" class="btn btn-primary">boost</a>
+		<div class="btn-group">
+			<a class="btn btn-primary" href="" data-toggle="dropdown">learn more <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="btn-group btn-group-justified">
+		<a href="" class="btn btn-primary">button</a>
+		<a href="" class="btn btn-primary" data-toggle="dropup">boost <span class="caret"></span></a>
+					
+		<div class="btn-group">
+			<a class="btn btn-primary" href="" data-toggle="dropdown">learn more <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+				<li><a href="#">dropdown</a></li>
+							
+				</ul>
+		</div>
+	</div>
+	
+	<div class="dropdown">
+		<div class="btn-group">
+			<a href="#" class = "btn btn-primary">click here</a>
+			<a href="#" class = "btn btn-primary" data-toggle="dorpdown"><span class="caret"></span></a>
+		</div>
+			<ul class="dropdown-menu">
+				<li><a href= "">dropdown</a></li>
+				<li><a href= "">dropdown</a></li>
+				<li><a href= "">dropdown</a></li>
+				<li><a href= "">dropdown</a></li>
+			</ul>
+	</div>
+	
+	<form action="#">
+	<div class="input-group">
+		<input type="text" class="form-control" />
+		<span class="input-group-btn">
+		<input type="submit" value="submit" class="btn btn-primary"/>
+		</span>
+	</div>
+	
+	
+	</form>
+	
+	<ul class="nav pills ">
+		<li><a href="">home</a></li>
+		<li><a href="">abous us</a></li>
+		<li><a href="">portfolio</a></li>
+		<li><a href="">contact us</a></li>
+		<li class="active"><a href="">profile</a></li>
+	</ul>
+	
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked ">
+			<li><a href="">home</a></li>
+			<li><a href="">abous us</a></li>
+			<li><a href="">portfolio</a></li>
+			<li><a href="">contact us</a></li>
+			<li class="active"><a href="">profile</a></li>
+		</ul>
+	</div>
+	
+		<ul class="nav nav-tabs  ">
+			<li><a href="">home</a></li>
+			<li class="dropdown"><a href="#" data-toggle="dropdown" >abous us <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">sub menu</a></li>
+				<li><a href="#">sub menu</a></li>
+				<li><a href="#">sub menu</a></li>
+				<li><a href="#">sub menu</a></li>
+				<li><a href="#">sub menu</a></li>
+			</ul>
+			</li>
+			<li class="active"><a href="">portfolio</a></li>
+			<li><a href="">contact us</a></li>
+			<li class="active"><a href="">profile</a></li>
+		</ul>
+	
+	<div class="header-area">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<h1>logo</h1>
+				</div>
+				<div class="col-md-8">
+					<nav class="navbar navbar-default navbar-fixed-bottom">
+						<ul class="nav nav-pills">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">portfolio</a></li>
+							<li><a href="#">services</a></li>
+						</ul>
+						
+					</nav>
+				</div>
+				<div class="col-md-2">
+					<form action="">
+						<div class="input-group">
+							<input type="text" class="form-control"/>
+							<span class="input-group-btn"></span><input class="btn btn-primary" type="submit" value="search" />
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<div class="content-area">
+	
+	<p>What is Lorem Ipsum?
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+	Why do we use it?
+	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+	Where does it come from?
+	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+	The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" byit look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+	What is Lorem Ipsum?
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+	Why do we use it?
+	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+	Where does it come from?
+	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+	The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by 
+	What is Lorem Ipsum?
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+	Why do we use it?
+	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+	Where does it come from?
+	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+	The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by.</p>
+
+
+	
+	</div>
+	
+	<ol class="breadcrumb">
+		<li><a href="#"></a>home</li>
+		<li>about as</li>
+		<li>company overview</li>
+	</ol>
+	
+	
+	<ul class="pagination">
+		<li><a href="">σ</a></li>
+		<li><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li class="active"><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="">next</a></li>
+	</ul>
+	
+	<ul class="pager">
+		<li><a href="">previous</a></li>
+		<li><a href="">next</a></li>
+	</ul>
+	<a href="" class="btn btn-danger">notification <span class="badge">3059</span></a>
+	<div class="jumbotron">
+		<h1>contact form 7</h1>
+		<p> the best contact form plugin for wordpress</p>
+		<a href="" class="btn btn-primary">Get in now</a>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<img class="thumbanil img-responsive" src="images/blue-box.jpg" alt="blue box" />
+		</div>
+	</div>
+	<div class="alert alert-danger">warning!</div>
+	
+</body>
+</html>

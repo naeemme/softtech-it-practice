@@ -1,0 +1,130 @@
+/*** header section **/
+.header -section{
+	overflow:hidden;
+	position:relative;
+}
+.header-section  .logo-section{
+	display:none;
+	
+}
+.headr-section .header-img img{
+	width:100%;
+	height:auto;
+}
+.header-section .main-menu{
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	margin-top:20px;
+	width:100%;
+	
+}
+.main-menu ul li{
+	margin:0 21px;
+}
+.main-menu ul li a{
+	text-transform:uppercase;
+	font-family:'lato',sans-serif;
+	color:4d4959;
+	font-weight:700;
+	font-size:12px;
+	letter-spacing:1.5px;
+}
+/*** description **/
+.section{
+	overflow:hidden;
+}
+.intro-section{
+	background-color:#F7F7F7;
+	padding:100px 0;
+	
+}
+.section .icon{
+	width:50px;
+	height:42px;
+}
+.section h2{
+	color:#353738;
+	font-weight:700;
+	font-family:'lato',sans-serif;
+	text-transform:uppercase;
+	font-size:18px;
+	letter-spacing:2px;
+	line-height:3em;
+	
+}
+.section .content{
+	display:block;
+	width:80%;
+	margin:0 auto;
+	font-size:18px;
+	line-height:1.4em;
+	text-align:justify;
+	
+	
+	
+}
+.section p{
+	color:#648789;
+	font-family:'lato',sans-serif;
+	font-weight:400;	
+}
+.big-small{
+	max-height:485px;
+	overflow:hidden;
+	position:relative;
+}
+.small-big{
+	max-height:485px;
+	overflow:hidden;
+}
+.big img,
+.small image img{
+	width:100%;
+	height:auto;
+}
+.section .big,
+.section .small{
+	padding:0;
+	padding-right:0;
+}
+.small-image{
+	background: url('images/vintage-bike-small.jpg') no-repeat;
+	background-size:100% auto;
+	min-height:200px;
+	background-position:buttom-left;
+}
+.small-des{
+	padding:50px 0 20px 0;
+}
+
+.small-image{
+	position:relative;
+}
+.small-des:after{
+	content:"";
+	height:0;
+	width:0;
+	border-top:10px solid red;
+	border-left:5px solid transparent;
+	border-right:5px solod transparent;
+	position:absolute;
+	top:40px;
+	left:50%;
+}
+.section-logo{
+	position:absolute;
+	z-index:9999;
+	top:50%;
+	left:0;
+	margin-top:-59px;
+	width:100%;
+	text-align:center;
+}
+.section-logo img{
+	display:block;
+	width:113px;
+	height:118px;
+	margin:auto;
+}

@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+}
+
+.second-left{
+	height:600px;
+	
+	width:70%;
+	float:left;
+	
+}
+.second-right{
+	height:600px;
+	background:orange;
+	width:30%;
+	overflow:hidden;
+}
+	
+
+	
+
+.footer-left{
+	height:100px;
+	
+	width: 20%;
+	background:#FFFFFF;
+	float:left;
+}
+.footer-right{
+	height:100px;
+	width:80%;
+	background:#B97A57;
+	overflow:hidden;
+}
+.third-top{
+	height:200px;
+	background:#B5E61D;
+}
+.third-middle{
+	height:300px;
+	background:#7092BE;
+}
+.third-last{
+	height:100px;
+}
+	

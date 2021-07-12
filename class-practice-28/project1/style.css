@@ -1,0 +1,22 @@
+.box{
+	height:300px;
+	width:300px;
+	background:blue;
+}
+.big-box{
+	height:600px;
+	width:600px;
+	background:red;
+}
+.rox{
+	float:center;
+	background:yellow;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.fox{
+	float:center;
+	background:green;
+	margin-top:20px;
+	margin-bottom:30px;
+}
